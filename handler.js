@@ -17,10 +17,10 @@ const d = new Date(new Date + 3600000)
   year: 'numeric'
   })
   let time = d.toLocaleTimeString('id')
+ const oi = global.db.setting.psn.replace('+tag', `@${m.sender.replace(/@.+/g, '')}`).replace('+name', m.pushName).replace('+today', week + ', ' + date + ', ' + time).replace('+greeting', Func.greeting())
 module.exports = async (client, m, store) => {
    try {
       require('./lib/system/schema')(m)
-      const oi = global.db.setting.psn.replace('+tag', `@${m.sender.replace(/@.+/g, '')}`).replace('+name', m.pushName).replace('+today', week + ', ' + date + ', ' + time).replace('+greeting', Func.greeting())
       const isOwner = [global.owner, ...global.db.setting.owners].map(v => v + '@s.whatsapp.net').includes(m.sender)
       const groupMetadata = m.isGroup ? await client.groupMetadata(m.chat) : {}
       const participants = m.isGroup ? groupMetadata.participants : [] || []
