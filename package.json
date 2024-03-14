@@ -1,0 +1,33 @@
+{
+   "name": "kenshin-bot",
+   "version": "2.4.5-rc",
+   "description": "WhatsApp Bot (Self Bot)",
+   "main": "index.js",
+   "engines": {
+      "node": "14.x",
+      "npm": "9.x"
+   },
+   "scripts": {
+      "start": "node ."
+   },
+   "author": "Luthfi Joestars",
+   "license": "ISC",
+   "dependencies": {
+      "@adiwajshing/baileys": "npm:@neoxr/baileys",
+      "@adiwajshing/keyed-db": "^0.2.4",
+      "@colors/colors": "^1.5.0",
+      "@kenss/kenshin-js": "^2.4.4",
+      "@neoxr/neoxr-js": "^1.9.14",
+      "cfonts": "3.1.1",
+      "express": "^4.18.2",
+      "google-play-scraper": "^10.0.0",
+      "json-stable-stringify": "^1.1.1",
+      "node-cron": "^3.0.0",
+      "nodemailer": "^6.9.0",
+      "pino": "^8.19.0",
+      "request": "^2.88.2",
+      "spinnies": "^0.5.1",
+      "translate-google-api": "1.0.4",
+      "yt-search": "^2.10.3"
+   }
+}
