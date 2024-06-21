@@ -16,7 +16,7 @@
       "@adiwajshing/baileys": "npm:@neoxr/baileys",
       "@adiwajshing/keyed-db": "^0.2.4",
       "@colors/colors": "^1.5.0",
-      "@neoxr/neoxr-js": "^1.9.14",
+      "@neoxr/neoxr-js": "^2.4.4",
       "cfonts": "3.1.1",
       "express": "^4.18.2",
       "google-play-scraper": "^10.0.0",
